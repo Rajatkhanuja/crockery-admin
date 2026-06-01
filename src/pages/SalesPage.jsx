@@ -17,11 +17,11 @@ export default function SalesPage({ setCurrentPage }) {
     try {
 
       const productsRes = await axios.get(
-        'http://192.168.1.26:5000/api/products'
+        'https://crockery-backend-3jqm.onrender.com/api/products'
       );
 
       const ordersRes = await axios.get(
-        'http://192.168.1.26:5000/api/orders'
+        'https://crockery-backend-3jqm.onrender.com/api/orders'
       );
 
       setProducts(productsRes.data);

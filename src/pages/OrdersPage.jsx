@@ -13,7 +13,7 @@ export default function OrdersPage({
     try {
 
       const { data } = await axios.get(
-        'http://192.168.1.26:5000/api/orders'
+        'https://crockery-backend-3jqm.onrender.com/api/orders'
       );
 
       setOrders(data);
@@ -40,7 +40,7 @@ export default function OrdersPage({
     try {
 
       await axios.put(
-        `http://192.168.1.26:5000/api/orders/${id}/deliver`
+        `https://crockery-backend-3jqm.onrender.com/api/orders/${id}/deliver`
       );
 
       fetchOrders();

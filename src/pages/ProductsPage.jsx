@@ -23,7 +23,7 @@ export default function ProductsPage({
     try {
 
       const response = await fetch(
-        'http://192.168.1.26:5000/api/products'
+        'https://crockery-backend-3jqm.onrender.com/api/products'
       );
 
       const data = await response.json();
@@ -48,7 +48,7 @@ export default function ProductsPage({
     try {
 
       await fetch(
-          `http://192.168.1.26:5000/api/products/delete/${id}`,
+          `https://crockery-backend-3jqm.onrender.com/api/products/delete/${id}`,
         {
           method: 'DELETE',
         }

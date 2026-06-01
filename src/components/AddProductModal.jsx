@@ -136,8 +136,8 @@ const handleProduct = async () => {
     const response = await fetch(
 
       editProduct
-        ? `http://192.168.1.26:5000/api/products/update/${editProduct._id}`
-        : 'http://192.168.1.26:5000/api/products/add',
+         ? `https://crockery-backend-3jqm.onrender.com/api/products/update/${editProduct._id}`
+  : 'https://crockery-backend-3jqm.onrender.com/api/products/add',
 
       {
         method: editProduct ? 'PUT' : 'POST',
