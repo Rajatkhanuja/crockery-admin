@@ -31,7 +31,7 @@ export default function AdminLoginScreen({
       setLoading(true);
 
       const response = await fetch(
-        'http://192.168.1.26:5000/api/admin/login',
+        'https://crockery-backend-3jqm.onrender.com/api/admin/login',
         {
           method: 'POST',
 
